@@ -6,7 +6,7 @@ body {
 
 /* typography */
 
-h1 {
+h1.hero-text {
     font-size: 3rem;
     background: linear-gradient(99.27deg, #63CBEE -11.49%, #FFE485 27.23%, #ECFDF3 60.04%, #FDBD1C 100.73%);
     -webkit-background-clip: text;
@@ -14,18 +14,53 @@ h1 {
     background-clip: text;
     text-align: center;
 }
+
+h1.page-header-name{
+    font-size: 3rem;
+    background-clip: text;
+    text-align: center;
+    color: #aaaaaa;
+    font-weight: 4;
+    margin: 0 1em;
+    text-transform: uppercase;
+}
+
+
 h2 {
     font-size: 1.5rem;
     color: #1D2939;
     line-height: 0.065em;
 }
 
+p {
+    line-height: 1.5em;
+}
+
 a {
     text-decoration: none;
     
 }
+        /****TOP PAGE TITLE*****/
+.page-name{
+    display: flex;
+    margin: 2.5em auto 0 auto;
+    width: inherit;
+    justify-content: center;
+    height: fit-content;
+    align-items: center;
+}
+.page-header-line{
+    width: 15%;
+    background-color: #d0d5dd;
+    height: 1px;
+}
 
-/* layout container */
+/***********************************
+        
+            layout container 
+
+
+ ***********************************/
 
 
 img {
@@ -288,3 +323,16 @@ footer li{
 footer a{
     color: white;
 }
+
+
+/* *************
+    ABOUT PAGE
+*************** */
+
+
+        /****Typography****/
+
+
+
+        /****LAYOUT****/
+
