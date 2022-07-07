@@ -1,0 +1,289 @@
+body {
+    font-size: 1rem;
+    color: #475467;
+    margin: 0;
+}
+
+/* typography */
+
+h1 {
+    font-size: 3rem;
+    background: linear-gradient(99.27deg, #63CBEE -11.49%, #FFE485 27.23%, #ECFDF3 60.04%, #FDBD1C 100.73%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-align: center;
+}
+h2 {
+    font-size: 1.5rem;
+    color: #1D2939;
+    line-height: 0.065em;
+}
+
+a {
+    text-decoration: none;
+    
+}
+
+/* layout container */
+
+
+img {
+    max-width: 100%;
+}
+
+.outlined {
+    width: 5em;
+    height: 2px;
+    background-color: #AD7205 ;
+    margin-bottom: 1em;
+}
+
+.center-outlined {
+    margin-left: auto;
+    margin-right: auto;
+    width: 5em;
+    height: 2px;
+    background-color: #AD7205 ;
+    margin-bottom: 1em;
+}
+
+
+
+/* *************
+    LAYOUT      
+*** ************/
+.container {
+    max-width: 1260px;
+    margin: 0 auto;
+    width: 95%;
+}
+
+/* navigator layout */
+.header {
+    display: flex;
+    flex-flow: column nowrap;
+}
+.header ul{
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    margin: 0 0.25em;
+    
+}
+
+.header li{
+    margin: 0 ;
+}
+.header .sociallinks {
+    display: flex;
+    justify-content: flex-end;
+}
+.header .sociallinks ul {
+    margin-left: auto;
+    margin-right: 0.25em;
+
+    height: fit-content;
+    margin: 0;
+    padding-top: 1em;
+}
+.header nav{
+    /* display: flex;
+    justify-content: center; */
+
+}
+
+ul.navigation {
+    display: flex;
+    align-items: center;
+}
+ul.navigation li{
+    margin: 0 1em;
+}
+
+.header a{
+    text-decoration: none;
+    color: #1D2939;
+}
+
+/* HERO */
+
+.hero {
+    width: 100%;
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    margin: 1em auto;
+    
+}
+
+img.hero-image{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+.hero-title {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    bottom: auto;
+    right: auto;
+    transform: translateX(-50%) translateY(-50%);
+    z-index: 500;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.hero h1 {
+    text-align: center;
+
+}
+
+/* ROW ONE */
+
+div.row {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin: 4em auto;
+
+    
+    
+}
+
+
+.content {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 2em;
+    max-width: 40%;
+    margin: 0 2em;
+}
+.content-image{
+    max-width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.row img {
+    min-width: 70%;
+    max-width: 70%;
+    object-fit: cover;
+}
+.btn {
+    padding: 0.25em 1em;
+    border: 1px solid #D3DBE9;
+    border-radius: 0.25em;
+    background-color: white;
+    color: #AD7205;
+}
+
+/********** 
+        GALLERY SECTION
+*************/
+
+.row.gallery{
+    display: flex;
+    flex-flow: column;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 4em auto;
+}
+
+.row.gallery .section {
+    display: flex;
+    flex-flow: column;
+    text-align: center;
+    justify-content: center;
+    margin-bottom: 2rem;
+    
+
+}
+
+.row.gallery .section p {
+    margin: 0em;
+}
+
+
+.row.gallery .media {
+    display: flex;
+    justify-content: center;
+    padding: 3em;
+}
+
+.row.gallery .media a{
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    
+}
+.approach-team__staff {
+    color: #404040;
+    font-family: mr-eaves-modern, sans-serif;
+    font-size: 1rem;
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+    box-sizing: inherit;
+    outline: 0;
+    text-align: center;
+    max-width: 480px;
+    position: relative;
+    width: calc(100%/3 - 16px);
+    margin: 0 24px 24px 0;
+}
+
+body > div > div.row.gallery > div.media > div.approach-team__staff > a > figure {
+    margin: 0;
+}
+
+body > div > div.row.gallery > div.media > div.approach-team__staff > a {
+    margin: 0;
+    color: #AD7205;
+}
+/* *******
+    FOOTER
+********** */
+
+footer {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    text-align: center;
+    background: #344054;
+    color: white;
+}
+
+Footer nav,ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+
+}
+
+footer ul {
+    padding: 0;
+    align-items: center;
+    align-items: center;
+    justify-content: space-between;
+}
+
+footer li{
+    margin: 0 1em;
+    
+}
+
+footer a{
+    color: white;
+}
