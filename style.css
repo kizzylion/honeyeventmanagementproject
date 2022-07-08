@@ -202,7 +202,7 @@ div.row {
     display: flex;
     justify-content: center;
     align-items: stretch;
-    max-width: 50%;
+    max-width: 45%;
     margin: 0 auto;
 }
 
@@ -225,7 +225,7 @@ div.holder{
 }
 
 .content-image{
-    max-width: 33%;
+    max-width: 40%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -235,9 +235,8 @@ div.holder{
 
 
 .row img {
-    /* min-width: 70%;
-    max-width: 70%; */
-    object-fit: cover;
+    max-width: 70%;
+    object-fit: contain;
 }
 .btn {
     padding: 0.25em 1em;
@@ -264,7 +263,8 @@ div.holder{
     flex-flow: column;
     text-align: center;
     justify-content: center;
-    margin-bottom: 2rem;
+    /* margin-bottom: 2rem; */
+    width: 100%;
     
 
 }
@@ -298,7 +298,7 @@ div.holder{
     max-width: 480px;
     position: relative;
     width: calc(100%/3 - 16px);
-    margin: 0 24px 24px 0;
+    
 }
 
 body > div > div.row.gallery > div.media > div.approach-team__staff > a > figure {
@@ -364,14 +364,19 @@ footer a{
     width: inherit;
     margin: 0 2em;
 }
+#team-section {
+    display: flex;
+    flex-direction: column;
+    margin: 6rem;
+}
 
 #team.row {
     justify-content: space-between;
-    margin: inherit;
+    margin: 0 auto;
 }
 
 #team .content{
-    width: 70%;
+    width: 67%;
     display: flex;
     flex-flow: column wrap;
     justify-content: center;
@@ -379,8 +384,20 @@ footer a{
     margin: 0 2em;
 }
 
+.team-row {
+    display: flex;
+    justify-content: space-between;
+}
+
 .team-image{
-    width: 30%;
+    width: 33%;
     display: flex;
     justify-content: center;
+    margin: 2rem 0 0 0;
+    gap: 2em;
+}
+
+.team-image img {
+    max-width: 70%;
+    object-fit: contain;
 }
