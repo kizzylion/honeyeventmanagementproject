@@ -4,9 +4,15 @@
 }
 
 body {
+    font-family: mr-eaves-modern, sans-serif;
     font-size: 1rem;
     color: #475467;
     margin: 0;
+}
+
+h1,
+h2 {
+    font-family: kepler-std-display, serif;
 }
 
 @media(max-width: 675px){
@@ -71,7 +77,7 @@ a:active {
         /****TOP PAGE TITLE*****/
 .page-name{
     display: flex;
-    margin: 2.5em 0 0 0;
+    margin: 2.5em 0 2.5em 0;
     width: 100%;
     justify-content: center;
     height: fit-content;
@@ -293,7 +299,7 @@ div.row {
     margin: 0 auto;
 }
 
-@media(max-width: 625px){
+@media(max-width: 675px){
     .content{
         order: 1;
         max-width: 100%;
@@ -452,6 +458,44 @@ div.holder{
     
 }
 
+
+
+.services-gallery {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.service-sector {
+    width: calc(100%/3 - 16px);
+    margin: 0.25em 0.25em;
+
+}
+
+.service-sector a{
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    
+}
+.service-sector a h3,img {
+    display: inline-block;
+    text-align: center;
+}
+
+@media(max-width:675px){
+
+    .service-sector {
+        width: calc(50% - 16px);
+    }
+    
+    .service-sector img {
+        object-fit: cover;
+        object-position: center;
+    
+    }
+
+}
+
 body > div > div.row.gallery > div.media > div.approach-team__staff > a > figure {
     margin: 0;
 }
@@ -504,6 +548,12 @@ footer ul {
 
 footer nav li{
     margin: 0 1em;
+}
+
+@media (max-width: 675px) {
+    footer nav li {
+        margin: 0.5em 2em ;
+    }
 }
 
 footer a{
