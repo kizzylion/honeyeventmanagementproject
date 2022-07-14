@@ -57,6 +57,10 @@ h2 {
     margin-bottom: 16px;
 }
 
+h3 {
+    font-size: 1.2em;margin-bottom: 0.5em;
+}
+
 p {
     line-height: 1.5em;
     margin: 1em 0;
@@ -197,8 +201,13 @@ img {
 }
 
 nav {
-    width: 100%;
+    width: 60%;
     margin: 0 auto;
+}
+@media(max-width: 675px){
+    nav  {
+        width: 100%;
+    }
 }
 
 nav li {
@@ -458,43 +467,44 @@ div.holder{
     
 }
 
-
-
 .services-gallery {
-    display: flex;
-    flex-flow: row wrap;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    grid-gap: 16px;
+    justify-items: center;
+    margin: 2em 8em;
 }
 
-.service-sector {
-    width: calc(100%/3 - 16px);
-    margin: 0.25em 0.25em;
-
+.services-gallery a img{
+    width: 233px;
+    height: 233px;
+    object-fit: cover;
 }
 
-.service-sector a{
+.services-gallery a{
     display: flex;
     flex-flow: column;
     align-items: center;
-    
-}
-.service-sector a h3,img {
-    display: inline-block;
-    text-align: center;
+    max-width: 80%;
+    color: #AD7205;
 }
 
-@media(max-width:675px){
+.services-gallery a h3{
+    display: inline;
+}
 
-    .service-sector {
-        width: calc(50% - 16px);
+.services-gallery a:hover{
+    transform: translateY(-2px);
+    box-shadow: 3px 3px 10px #00000070;
+}
+
+@media(max-width: 675px){
+    .services-gallery{
+        margin: 2em auto;
     }
-    
-    .service-sector img {
-        object-fit: cover;
-        object-position: center;
-    
-    }
-
 }
+
+
 
 body > div > div.row.gallery > div.media > div.approach-team__staff > a > figure {
     margin: 0;
