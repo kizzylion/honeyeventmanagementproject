@@ -506,6 +506,7 @@ div.holder{
     align-items: center;
     max-width: 80%;
     color: #AD7205;
+    border-radius: 10px;
 }
 
 
@@ -589,7 +590,9 @@ div.holder{
 
 
 .services-gallery a h3{
-    display: none;
+    display:block;
+    position: absolute;
+    color: #d8d5d560;
 }
 
 .services-gallery a:hover{
@@ -598,10 +601,26 @@ div.holder{
     cursor: pointer;
 }
 
-@media(max-width: 675px){
+@media(max-width: 450px){
     .services-gallery{
         width: 80%;
         margin: 2em auto;
+        
+    }
+
+    .services-gallery {
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 0.125em;
+    }
+    .services-gallery .links {
+        border-radius: 0.125em;
+    }
+    .services-gallery a img{
+        border-radius: 0.125em;
+    }
+
+    .links:before{
+        font-size: 0.8em;
     }
 }
 
@@ -702,8 +721,11 @@ body > div > div.row.gallery > div.media > div.approach-team__staff > a {
 }
 
 input {
-    display: none;
+    display: none ;
 }
+
+
+
 .container2 {
     width: 100%;
     text-align: center;
@@ -715,8 +737,9 @@ input {
     background-color: rgb(240, 240, 240);
     width: 90%;
     margin: 0 auto 20px auto;
-    height: 60px;
+    /* height: 60px; */
     display: flex;
+    flex-flow: row wrap;
     align-items: center;
     border-radius: 10px;
     box-shadow: 3px 3px 5px lightgray;
@@ -733,7 +756,7 @@ input {
 .top-content label {
     display: inline-block;
     height: 100%;
-    margin: 0 1em;
+    margin: 0 0.5em;
     line-height: 60px;
     font-size: 18px;
     color: gray;
@@ -746,13 +769,13 @@ input {
 }
 
 
-
 .photo-gallery {
     width: 90%;
     margin: auto;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(156px, 1fr));
     grid-gap: 1rem;
+    
 }
 
 .pic {
@@ -824,7 +847,11 @@ input {
 }
 
 #check2:checked ~ .container2 .photo-gallery .corporate,
-#check2:checked ~ .container2 .photo-gallery .parties{
+#check2:checked ~ .container2 .photo-gallery .parties,
+#check2:checked ~ .container2 .photo-gallery .staffing,
+#check2:checked ~ .container2 .photo-gallery .tourism,
+#check2:checked ~ .container2 .photo-gallery .burials,
+#check2:checked ~ .container2 .photo-gallery .conferences{
    opacity: 0;
    transform: scale(0);
    position: absolute;
@@ -839,7 +866,11 @@ input {
 }
 
 #check3:checked ~ .container2 .photo-gallery .weddings,
-#check3:checked ~ .container2 .photo-gallery .parties{
+#check3:checked ~ .container2 .photo-gallery .parties,
+#check3:checked ~ .container2 .photo-gallery .staffing,
+#check3:checked ~ .container2 .photo-gallery .tourism,
+#check3:checked ~ .container2 .photo-gallery .burials,
+#check3:checked ~ .container2 .photo-gallery .conferences{
    opacity: 0;
    transform: scale(0);
    position: absolute;
@@ -854,16 +885,106 @@ input {
 }
 
 #check4:checked ~ .container2 .photo-gallery .weddings,
-#check4:checked ~ .container2 .photo-gallery .corporate{
+#check4:checked ~ .container2 .photo-gallery .corporate,
+#check4:checked ~ .container2 .photo-gallery .staffing,
+#check4:checked ~ .container2 .photo-gallery .tourism,
+#check4:checked ~ .container2 .photo-gallery .burials,
+#check4:checked ~ .container2 .photo-gallery .conferences{
+   opacity: 0;
+   transform: scale(0);
+   position: absolute;
+   transition: .0s;
+}
+#check5:checked ~ .container2 .photo-gallery .staffing{
+    transform: scale(1);
+    opacity: 1;
+    position: relative;
+    transition: .5s;
+}
+
+#check5:checked ~ .container2 .photo-gallery .weddings,
+#check5:checked ~ .container2 .photo-gallery .corporate,
+#check5:checked ~ .container2 .photo-gallery .parties,
+#check5:checked ~ .container2 .photo-gallery .tourism,
+#check5:checked ~ .container2 .photo-gallery .burials,
+#check5:checked ~ .container2 .photo-gallery .conferences{
+   opacity: 0;
+   transform: scale(0);
+   position: absolute;
+   transition: .0s;
+}
+#check6:checked ~ .container2 .photo-gallery .tourism{
+    transform: scale(1);
+    opacity: 1;
+    position: relative;
+    transition: .5s;
+}
+
+#check6:checked ~ .container2 .photo-gallery .weddings,
+#check6:checked ~ .container2 .photo-gallery .corporate,
+#check6:checked ~ .container2 .photo-gallery .parties,
+#check6:checked ~ .container2 .photo-gallery .staffing,
+#check6:checked ~ .container2 .photo-gallery .burials,
+#check6:checked ~ .container2 .photo-gallery .conferences{
+   opacity: 0;
+   transform: scale(0);
+   position: absolute;
+   transition: .0s;
+}
+#check7:checked ~ .container2 .photo-gallery .burials{
+    transform: scale(1);
+    opacity: 1;
+    position: relative;
+    transition: .5s;
+}
+
+#check7:checked ~ .container2 .photo-gallery .weddings,
+#check7:checked ~ .container2 .photo-gallery .corporate,
+#check7:checked ~ .container2 .photo-gallery .parties,
+#check7:checked ~ .container2 .photo-gallery .staffing,
+#check7:checked ~ .container2 .photo-gallery .tourism,
+#check7:checked ~ .container2 .photo-gallery .conferences{
+   opacity: 0;
+   transform: scale(0);
+   position: absolute;
+   transition: .0s;
+}
+#check8:checked ~ .container2 .photo-gallery .conferences{
+    transform: scale(1);
+    opacity: 1;
+    position: relative;
+    transition: .5s;
+}
+
+#check8:checked ~ .container2 .photo-gallery .weddings,
+#check8:checked ~ .container2 .photo-gallery .corporate,
+#check8:checked ~ .container2 .photo-gallery .parties,
+#check8:checked ~ .container2 .photo-gallery .staffing,
+#check8:checked ~ .container2 .photo-gallery .tourism,
+#check8:checked ~ .container2 .photo-gallery .burials{
    opacity: 0;
    transform: scale(0);
    position: absolute;
    transition: .0s;
 }
 
+
+
+
+
 .mikey::before{
     content: "mike & devy";
 }
+
+/* *******
+    Potfolio Images Slider
+********** */
+.slider-container{
+    width: 100%;
+    height: 100%;
+    background: #222;
+}
+
 
 /* *******
     FOOTER
