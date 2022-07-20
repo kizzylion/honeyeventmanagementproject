@@ -12,19 +12,20 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    margin: auto auto;
     
 }
 
 
 .swiper{
     width: 80%;
-    height: fit-content;
-    object-fit: cover;
+    height: 100vh;
 }
 
 
 .swiper-slide img{
     width: 100%;
+    object-position: center;
     object-fit: cover;
 
 }
