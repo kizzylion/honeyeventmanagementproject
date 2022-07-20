@@ -140,12 +140,19 @@ img {
     width: 95%;
     display: flex;
     flex-flow: column;
+    position: relative;
 }
 
 /* navigator layout */
 .header {
     display: flex;
     flex-flow: column nowrap;
+    position: fixed;
+    width: 100%;
+    z-index: 600;
+    background: white;
+    position: sticky;
+    top: 0;
 }
 .header ul{
     display: flex;
@@ -154,10 +161,14 @@ img {
 }
 
 @media(max-width: 675px){
+    .header {
+    position: relative;
+    }
     .header ul.primary{
         flex-flow: column wrap;
         width: 100%;
     }
+    
 }
 
 
