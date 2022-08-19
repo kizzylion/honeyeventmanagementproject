@@ -97,32 +97,34 @@
            <div class="contact-form">
                <span class="circle one"></span>
                <span class="circle two"></span>
-               <form action="">
+               <form onsubmit="sendEmail(); reset(); return false;">
                    <h3 class="title">Contact us</h3>
                    <div class="input-container focus">
-                       <input type="text" name="name" class="input">
+                       <input type="text" name="name" id="name" class="input">
                        <label for="">Name</label>
                        <span>Name</span>
                    </div>
                    <div class="input-container ">
-                       <input type="email" name="email" class="input">
+                       <input type="email" name="email" id="email" class="input">
                        <label for="">Email</label>
                        <span>Email</span>
                    </div>
                    <div class="input-container ">
-                       <input type="tel" name="Phone" class="input">
+                       <input type="tel" name="phone" id="phone" class="input">
                        <label for="">Phone</label>
                        <span>Phone</span>
                    </div>
                    <div class="input-container textarea focus">
-                       <textarea name="message" id="" cols="30" rows="10" class="input"></textarea>
+                       <textarea name="message" id="message" cols="30" rows="10" class="input"></textarea>
                        <label for="">Message</label>
                        <span>Message</span>
                    </div>
-                   <input type="submit" value="Send" class="btn2">
+                   <button type="submit" class="btn2">Send</button> 
                </form>
         </div>
         </section>
+
+        
         <footer>
             <nav>
                 <ul>
@@ -147,6 +149,8 @@
         </footer>
     </div>
 
+    <script src="https://smtpjs.com/v3/smtp.js">
+    </script>
     <script src="app.js"></script>
 </body>
 </html>

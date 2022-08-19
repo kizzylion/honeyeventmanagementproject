@@ -372,6 +372,7 @@ div.holder{
     align-items: stretch;
     max-width: 50%;
     margin: 0 auto 0 0;
+    position: relative;
 }
 @media(max-width:675px){
     .row.two .content{
@@ -382,10 +383,12 @@ div.holder{
 
 .content-image{
     max-width: 40%;
+    height: 40vh;
     display: flex;
     align-items: center;
     justify-content: center;
     flex: 1 3 auto;
+    position: relative;
 }
 
 @media(max-width: 675px){
@@ -399,8 +402,9 @@ div.holder{
 
 
 .row img {
-    max-width: 70%;
-    object-fit: contain;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 @media(max-width: 675px){
@@ -472,6 +476,7 @@ div.holder{
     display: flex;
     justify-content: center;
     padding: 3em;
+    gap: 16px;
 }
 
 @media(max-width: 675px){
@@ -505,6 +510,16 @@ div.holder{
     position: relative;
     width: calc(100%/3 - 16px);
     
+}
+
+body > div > div.row.gallery > div.media > div.approach-team__staff > a > figure {
+    margin: 0;
+    height: 50vh;
+}
+
+body > div > div.row.gallery > div.media > div.approach-team__staff > a {
+    margin: 0;
+    color: #AD7205;
 }
 
 /* ***  SERVICE GALLERY  *** */
@@ -600,7 +615,6 @@ div.holder{
 .links.conferences:before{
     content: "CONFERENCES";
     text-align: center;
-    FONT
 }
 
 
@@ -720,14 +734,7 @@ div.holder{
 }
 
 
-body > div > div.row.gallery > div.media > div.approach-team__staff > a > figure {
-    margin: 0;
-}
 
-body > div > div.row.gallery > div.media > div.approach-team__staff > a {
-    margin: 0;
-    color: #AD7205;
-}
 
 
 
