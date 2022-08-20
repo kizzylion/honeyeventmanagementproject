@@ -175,6 +175,7 @@ img {
 @media(max-width: 675px){
     .header {
     position: relative;
+    padding: 0;
     }
     .header ul.primary{
         flex-flow: column wrap;
@@ -200,6 +201,7 @@ img {
 .navigator {
     display: flex;
     align-items: center;
+    padding: 0 1rem;
 }
 
 @media(max-width: 675px){
@@ -517,6 +519,17 @@ body > div > div.row.gallery > div.media > div.approach-team__staff > a > figure
     height: 50vh;
 }
 
+@media (max-width: 675px) {
+    body > div > div.row.gallery > div.media > div.approach-team__staff > a > figure {
+        height: 30vh;
+    }
+
+    .row.gallery .media {
+        justify-content: center;
+        gap: 8px;
+    }
+}
+
 body > div > div.row.gallery > div.media > div.approach-team__staff > a {
     margin: 0;
     color: #AD7205;
@@ -671,6 +684,8 @@ body > div > div.row.gallery > div.media > div.approach-team__staff > a {
     height: 50vmin;
     border: 1px solid green;
     margin: 0 0 2.5em 0;
+    width: 100%;
+    
 }
 
 .carousel img{
@@ -1005,9 +1020,54 @@ input {
 
 
 .mikey::before{
-    content: "mike & devy";
+    content: "Mike & Devy";
 }
 
+.tunde::before{
+    content: "Tunde & Debby";
+}
+.uche::before{
+    content: "Uche & Amara";
+}
+.success::before{
+    content: "Success & Zainab";
+}
+.guiness::before{
+    content: "Guiness";
+}
+.palmcredit::before{
+    content: "Palmcredit";
+}
+.unilever::before{
+    content: "Unilever";
+}
+.coldstone::before{
+    content: "Coldstone";
+}
+.lekki::before{
+    content: "lekki";
+}
+.epe::before{
+    content: "Epe";
+}
+.oshodi::before{
+    content: "Oshodi";
+}
+.ago::before{
+    content: "Ago";
+}
+.kkp::before{
+    content: "KKP";
+}
+.nafdac::before{
+    content: "NAFDAC";
+}
+.agip::before{
+    content: "AGIP";
+}
+.shell::before{
+    content: "SHELL";
+}
 /* *******
     Potfolio Images Slider
 ********** */
@@ -1056,6 +1116,10 @@ footer ul {
 }
 
 @media( max-width: 675px){
+    footer {
+    padding-left: 0;
+    padding-right: 0;
+    }
     footer ul{
         flex-flow: row wrap;
     }
