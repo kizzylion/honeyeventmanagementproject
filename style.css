@@ -1019,24 +1019,18 @@ input {
 
 
 
-.mikey::before{
-    content: "Mike & Devy";
+.reception::before{
+    content: "Reception";
 }
 
-.tunde::before{
-    content: "Tunde & Debby";
-}
-.uche::before{
-    content: "Uche & Amara";
-}
-.success::before{
-    content: "Success & Zainab";
+.traditional::before{
+    content: "Traditional";
 }
 .guiness::before{
     content: "Guiness";
 }
-.palmcredit::before{
-    content: "Palmcredit";
+.tecno::before{
+    content: "Tecno";
 }
 .unilever::before{
     content: "Unilever";
@@ -1056,11 +1050,11 @@ input {
 .ago::before{
     content: "Ago";
 }
-.kkp::before{
-    content: "KKP";
+.staffing1::before{
+    content: "Staffing";
 }
-.nafdac::before{
-    content: "NAFDAC";
+.staffing2::before{
+    content: "Tecno staffing";
 }
 .agip::before{
     content: "AGIP";
