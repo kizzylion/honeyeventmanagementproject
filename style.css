@@ -543,6 +543,7 @@ body > div > div.row.gallery > div.media > div.approach-team__staff > a {
     grid-gap: 16px;
     justify-items: center;
     margin: 2em 8em; */
+    max-width: 672px;
     width: 80%;
     margin: auto;
     display: grid;
@@ -557,7 +558,7 @@ body > div > div.row.gallery > div.media > div.approach-team__staff > a {
     flex-flow: column; */
     position: relative;
     align-items: center;
-    max-width: 80%;
+    max-height: 230px;
     color: #AD7205;
     border-radius: 10px;
 }
@@ -655,20 +656,17 @@ body > div > div.row.gallery > div.media > div.approach-team__staff > a {
 
 @media(max-width: 450px){
     .services-gallery{
-        width: 80%;
+        width:90%;
         margin: 2em auto;
-        
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 1rem;
     }
 
-    .services-gallery {
-        grid-template-columns: repeat(2, 1fr);
-        grid-gap: 0.125em;
-    }
     .services-gallery .links {
-        border-radius: 0.125em;
+        border-radius: 10px;
     }
     .services-gallery a img{
-        border-radius: 0.125em;
+        border-radius: 10px;
     }
 
     .links:before{
@@ -1038,15 +1036,13 @@ input {
 .coldstone::before{
     content: "Coldstone";
 }
-.lekki::before{
-    content: "lekki";
+.inaugration::before{
+    content: "Inaugration Dinner";
 }
-.epe::before{
-    content: "Epe";
+.jazz::before{
+    content: "Yemi Jazz Club";
 }
-.oshodi::before{
-    content: "Oshodi";
-}
+
 .ago::before{
     content: "Ago";
 }
@@ -1056,12 +1052,7 @@ input {
 .staffing2::before{
     content: "Tecno staffing";
 }
-.agip::before{
-    content: "AGIP";
-}
-.shell::before{
-    content: "SHELL";
-}
+
 /* *******
     Potfolio Images Slider
 ********** */
