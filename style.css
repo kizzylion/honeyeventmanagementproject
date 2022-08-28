@@ -1052,6 +1052,9 @@ input {
 .staffing2::before{
     content: "Tecno staffing";
 }
+.burial1::before{
+    content: "Burial";
+}
 
 /* *******
     Potfolio Images Slider
